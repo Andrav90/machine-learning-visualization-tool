@@ -1,0 +1,147 @@
+body, html {  
+    background-color: #f1e5e6;
+    height: 100%;
+}
+
+#title{
+    padding-top: 6em; 
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+#enhance{
+    text-align: center;
+    margin-top: -30px;
+}
+
+#enhanceButton {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background: #C04848;  
+    background: -webkit-linear-gradient(to left, #480048, #C04848);  
+    background: linear-gradient(to left, #480048, #C04848);
+    opacity: 80%;
+    display: inline-block;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    box-shadow: grey 2px 3px 8px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+label:active{
+    opacity: 60%;
+
+}
+
+label:hover{
+    transform: scale(1.1);
+}
+
+#description{
+    padding-bottom: 1%; 
+    width: 100%;
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1{
+    font-weight: 600;
+}
+
+#wrapper {
+    max-height:85%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 180px;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 800px) { 
+    h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    h2, p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: 400;
+        width: 200px;
+    }
+
+    #title{
+        padding-top: 25%;
+        padding-bottom: 1em;
+    }
+
+    #enhance{
+        padding-top: 10%;
+    }
+
+    navbar {
+        width: 96%;
+        position: absolute;
+    }
+    
+    navbar a {
+        margin-top: -19px;
+    }
+
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-wrap .hamburger{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 17px;
+        margin-right: 10px;
+    }
+
+    footer{
+        position: relative; 
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    label {
+        font-size: 16px;
+        font-weight: 400;
+        width: 250px;
+    }
+}

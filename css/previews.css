@@ -1,0 +1,148 @@
+html {
+  padding-bottom: 1%;
+}  
+
+#previews:hover {
+  transform: scale(1.2);
+}
+
+.category {
+  background-color: transparent;
+  color: black;
+  margin-left: 60px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description{
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+}
+
+b{
+  font-weight: 500;
+}
+
+.thumbnails{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+#previews{
+  width: 200px;
+  height: 200px;
+  border: solid black 1px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sections {
+  width: 68%;
+  max-width: 68%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+#descriptionContainer, #thumbnailsContainer {
+  padding: 1%;
+  box-shadow: grey 1px 2px 5px;
+  background-color: #f1e5e6;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  margin-left: 35px;
+}
+
+@media screen and (max-width: 800px) { 
+  #hamburger-navbar {
+    width: 100%;
+    margin-top: -12px;
+  }
+
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  footer {
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 1000px)  { 
+  .sections {
+    width: 100%;
+    max-width: 98%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #descriptionContainer, #thumbnailsContainer{
+    width: 100%;
+    margin-left: 0;
+  }
+  #previews{
+    width: 40%;
+    height: auto;
+    margin: 4%;
+    margin-left: 4%;
+  }
+
+  .category{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 3%;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+ #previews{
+    width: 30%;
+    height: auto;
+    margin: 1%;
+  } 
+
+}
+
+@media screen and (min-width: 1900px) {
+  #previews{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  } 
+}
+
+@media screen and (min-width: 2000px) {
+  #previews{
+    width: 220px;
+    height: 220px;
+    margin: 22px;
+  }
+  .category{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 3%;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

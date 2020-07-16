@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link type="text/css" rel="stylesheet" href="../css/all.css">
+    <link type="text/css" rel="stylesheet" href="../css/previews.css">
+    <link type="text/css" rel="stylesheet" href="../libs/fontawesome-free-5.13.0-web/css/all.css">
+</head>
+
+<body>
+    <a class="go-top-btn" href="#"><i class="fa fa-angle-double-up"></i></a>
+   
+    <navbar id="hamburger-navbar">
+        <div class="menu-wrapper">
+            <a href="../index.html">
+                <p id="page-name">Logo</p>
+            </a>
+
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="enhance.html">IMAGE ENHANCE</a></li>
+                                <li><a href="previews.html">DETAILED VIEW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </navbar>
+
+    <navbar id="normal-navbar">
+        <div class="menu-wrapper">
+            <a href="../index.html">
+                <p id="page-name">Logo</p>
+            </a>
+            <div id="navbar-items">
+                <hr class="navbar-hrs">
+                <li id="navbarHome"><a href="../index.html">Home</a></li>
+                <hr class="navbar-hrs">
+                <li id="navbarEnhance"><a href="enhance.html">Image enhance</a></li>
+                <hr class="navbar-hrs">
+                <li id="navbarDetailed"><a href="previews.html">Detailed view</a></li>
+            </div>
+        </div>
+    </navbar>
+
+    <div class="sections">
+        <p class="category">Detailed view</p>
+        <div id="descriptionContainer">
+            <p class="description"></p>
+            <hr>
+            <p class="description">
+                Cras convallis ipsum non neque rutrum aliquet. Nulla rutrum sapien sed ex tempus efficitur. Vestibulum pharetra feugiat tincidunt. 
+                Fusce congue ex eget mi laoreet accumsan. Morbi convallis libero finibus efficitur lobortis.
+            </p>
+            <br />
+            <h3>The images below are clickable</h3>
+            <hr>
+        </div>
+
+        <p class="category">Previews</p>
+        <div id="thumbnailsContainer">
+            <div class="thumbnails">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr id="footerHr">
+        <p>©2020 Company</p>
+        <a id="footerA" href="#">LinkedIn</a>
+    </footer>
+
+    <script src="../js/previews.js"></script>
+</body>
+</html>

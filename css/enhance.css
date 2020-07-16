@@ -1,0 +1,285 @@
+html{
+  height: 100%;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #dc717d;
+  text-decoration: none;
+}
+
+.cd-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0;
+  margin-bottom: 1.5%;
+}
+
+.cd-image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.cd-image-label {
+  font-size: 21px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 1em;
+  opacity: 0;
+}
+
+.cd-image-label.is-hidden {
+  visibility: hidden;
+}
+
+.is-visible .cd-image-label {
+  opacity: 1;
+}
+
+.cd-resize-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cd-resize-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
+.cd-resize-img .cd-image-label {
+  right: auto;
+  left: 0;
+}
+
+.is-visible .cd-resize-img {
+  width: 50%;
+}
+
+.cd-handle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: grey;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cd-handle:after{
+  position: absolute;
+  top: 42%;
+  width: 44px;
+  height: 44px;
+  cursor: move;
+  margin-left: -19px;
+  content: '\2b0c';
+  font-size: 28px;
+  text-align: center;
+  background: #C04848;
+  border: 1px solid #C04848;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.cd-handle.draggable:after{
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
+  opacity: 0.7;
+}
+
+#wrapper {
+  padding-top: 20px;
+  height: 100%;
+  position: relative;
+}
+
+#leftArrow, #rightArrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+}
+
+#leftArrow img, #rightArrow img {
+  opacity: 0.5;
+  width: 50px;
+  height: 70px;
+}
+
+#leftArrow img:hover, #rightArrow img:hover {
+  opacity: 1;
+} 
+
+#rightArrow{
+  right: 0;
+}
+
+.category {
+  background-color: transparent;
+  color: black;
+  margin-left: 5%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#sliderContainer, #descriptionContainer {
+  padding: 1%;
+  box-shadow: grey 1px 2px 5px;
+  background-color: #f1e5e6;
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#descriptionContainer{
+  margin-top: 20px;
+}
+
+.description {
+  padding-left: 5%;
+}
+
+#buttonToPreviews{
+  text-align: center;
+  align-self: center;
+}
+
+#button {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+label {
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background: #C04848;  
+  background: -webkit-linear-gradient(to left, #480048, #C04848);  
+  background: linear-gradient(to left, #480048, #C04848);
+  opacity: 80%;
+  display: inline-block;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  box-shadow: grey 2px 3px 8px;
+  margin-bottom: 1%;
+}
+
+label:active{
+  opacity: 60%;
+
+}
+
+label:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) { 
+  #hamburger-navbar {
+    width: 100%;
+    margin-top: -12px;
+  }
+
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  #sliderContainer, #descriptionContainer{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  #sliderContainer {
+    padding-bottom: 20px;
+  }
+
+  .cd-handle:after{
+    width: 19px;
+    height: 19px;
+    margin-left: -8px;
+    font-size: 11px;
+    top: 42%;
+  }
+
+  .cd-handle.draggable:after{
+    width: 19px;
+    height: 19px;
+    font-size: 11px;
+    opacity: 0.7;
+  }
+
+  #leftArrow img, #rightArrow img {
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+  }
+
+  .cd-image-label {
+    font-size: 14px;
+  }
+
+  .category{
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 5%;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+  }
+
+  footer{
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+  }
+}
